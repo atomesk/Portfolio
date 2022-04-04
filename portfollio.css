@@ -1,0 +1,159 @@
+body {
+    background-image: url("img/background-white.jpg")
+}
+
+#conteneur {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#processing,
+#java,
+#html-css,
+#bash {
+    text-align: center;
+    background-color: #333;
+    padding-left: 1%;
+    padding-right: 1%;
+    margin-left: 8%;
+    margin-top: 3%;
+    color: white;
+    width: 20%;
+    height: 200px;
+    border-radius: 3em;
+}
+
+#processing:hover, #java:hover, 
+#html-css:hover, #bash:hover {
+    transition: 0.5s;
+    height: 400px;
+}
+
+#processing:hover>.projets-processing, #java:hover>.projets-java, 
+#html-css:hover>.projets-html-css, #bash:hover>.projets-bash {
+    display: block;
+}
+
+
+.projets-processing,
+.projets-java,
+.projets-html-css,
+.projets-bash {
+    display: none;
+}
+
+#processing img,
+#java img,
+#html-css img,
+#bash img {
+    width: 30%;
+}
+
+#processing p,
+#java p,
+#html-css p,
+#bash p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#processing button,
+#java button,
+#html-css button,
+#bash button {
+    margin-top: 5%;
+    margin: 20px;
+    outline: none;
+}
+
+.custom-btn {
+    width: 130px;
+    height: 40px;
+    padding: 10px 25px;
+    border: 2px solid #333;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    border: 2px solid white;
+}
+
+.btn-15 {
+    background: #333;
+    color: #fff;
+    z-index: 1;
+}
+
+.btn-15:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    background: #e0e5ec;
+    transition: all 0.3s ease;
+}
+
+.btn-15:hover {
+    color: #333;
+}
+
+.btn-15:hover:after {
+    left: 0;
+    width: 100%;
+}
+
+.btn-15:active {
+    top: 2px;
+}
+
+@media (max-width: 500px){
+
+#processing img,
+#java img,
+#html-css img,
+#bash img {
+    width: 100%;
+}
+
+#conteneur {
+    display: block;
+    
+}
+
+
+
+#processing,
+#java,
+#html-css,
+#bash {
+    padding-left: 25%;
+    padding-right: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 600px;
+}
+
+#processing:hover, #java:hover, 
+#html-css:hover, #bash:hover {
+    transition: none;
+    height: 600px;
+}
+
+
+
+.projets-processing,
+.projets-java,
+.projets-html-css,
+.projets-bash {
+    display: block;
+}
+
+}
