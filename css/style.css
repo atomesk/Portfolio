@@ -1,5 +1,6 @@
 body {
-    background-image: url("img/background-white.jpg");
+    background: rgb(255, 255, 255);
+    background: radial-gradient(circle, rgba(255, 255, 255, 1) 7%, rgba(215, 215, 233, 1) 45%);
 }
 
 .deux-conteneurs {
@@ -33,7 +34,7 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    border-top: 1px solid rgb(224, 219, 219);
+    border-top: 1px solid rgba(255, 255, 255, 1);
     width: 400px;
 }
 
@@ -71,7 +72,7 @@ body {
 }
 
 #premier li a {
-    background-color: rgb(224, 219, 219);
+    background-color: rgba(215, 215, 233, 1);
     color: #333;
 }
 
@@ -86,6 +87,7 @@ body {
 
 .qui-suisje {
     text-align: center;
+    font-size: 20px;
 }
 
 #second-titre {
@@ -114,5 +116,34 @@ body {
     }
     50% {
         border-color: #333;
+    }
+}
+
+@media (max-width: 500px) {
+    .deux-conteneurs {
+        display: block;
+    }
+    #premier {
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        height: 450px;
+    }
+    #premier img {
+        margin-top: 15%;
+    }
+    #trait {
+        width: 200px;
+    }
+    #second {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20%;
+    }
+    .gros {
+        font-size: 50px;
+    }
+    #second-titre {
+        font-size: 14px;
     }
 }
