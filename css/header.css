@@ -26,3 +26,9 @@ header li a {
 header li a:hover {
     background-color: black;
 }
+
+@media (max-width: 500px) {
+    header li {
+        float: right;
+    }
+}
