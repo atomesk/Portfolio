@@ -1,6 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 body {
     background: rgb(255, 255, 255);
     background: radial-gradient(circle, rgba(255, 255, 255, 1) 7%, rgba(215, 215, 233, 1) 45%);
+    font-family: "Poppins", sans-serif;
 }
 
 #conteneur {
@@ -12,7 +14,9 @@ body {
 #java,
 #html-css,
 #bash,
-#systeme {
+#systeme,
+#bd,
+#gestion {
     text-align: center;
     background-color: #333;
     padding-left: 1%;
@@ -50,6 +54,16 @@ body {
 
 #systeme:hover {
     transition: 0.5s;
+    height: 260px;
+}
+
+#bd:hover {
+    transition: 0.5s;
+    height: 250px;
+}
+
+#gestion:hover {
+    transition: 0.5s;
     height: 275px;
 }
 
@@ -57,7 +71,9 @@ body {
 #java:hover>.projets-java,
 #html-css:hover>.projets-html-css,
 #bash:hover>.projets-bash,
-#systeme:hover>.projets-systeme {
+#systeme:hover>.projets-systeme,
+#bd:hover>.projets-bd,
+#gestion:hover>.projets-gestion {
     display: block;
 }
 
@@ -65,7 +81,9 @@ body {
 .projets-java,
 .projets-html-css,
 .projets-bash,
-.projets-systeme {
+.projets-systeme,
+.projets-bd,
+.projets-gestion {
     display: none;
 }
 
@@ -73,14 +91,25 @@ body {
 #java img,
 #html-css img,
 #bash img,
-#systeme img {
+#systeme img,
+#gestion img {
     width: 30%;
+}
+
+#bd img {
+    width: 50%;
+}
+
+#gestion img {
+    color: white;
 }
 
 #processing p,
 #java p,
 #html-css p,
-#bash p {
+#systeme p,
+#bd p,
+#gestion p {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -90,7 +119,8 @@ body {
 #processing button,
 #java button,
 #html-css button,
-#bash button {
+#bd button,
+#gestion button {
     margin-top: 5%;
     margin: 20px;
     outline: none;
@@ -111,8 +141,14 @@ body {
     border: 2px solid white;
 }
 
-#systeme .custom-btn {
-    height: 55px;
+#java .custom-btn,
+#systeme .custom-btn,
+#bd .custom-btn {
+    width: 225px;
+}
+
+#gestion .custom-btn {
+    width: 250px;
 }
 
 .btn-15 {
