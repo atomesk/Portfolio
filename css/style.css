@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 body {
-    background: rgb(255, 255, 255);
-    background: radial-gradient(circle, rgba(255, 255, 255, 1) 7%, rgba(215, 215, 233, 1) 45%);
+    /*background: rgb(255, 255, 255);
+    background: radial-gradient(circle, rgba(255, 255, 255, 1) 7%, rgba(215, 215, 233, 1) 45%);*/
+    background-image: url('img/background-black2.jpg');
+    background-size: cover;
     font-family: "Poppins", sans-serif;
 }
 
@@ -61,26 +63,29 @@ body {
 #second li a,
 #premier li a {
     display: block;
-    color: rgb(224, 219, 219);
+    color: #333;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    background-color: #333;
-}
-
-#second li a:hover,
-#premier li a:hover {
-    background-color: black;
-}
-
-#premier li a {
     background-color: rgba(215, 215, 233, 1);
-    color: #333;
+    border: 0.5px solid black;
 }
 
-#premier li a:hover {
-    color: white;
+#second li a:hover {
+    background: none;
+   
+    color: rgb(224, 219, 219);
 }
+
+#premier li a:hover{
+    background-color: #333;
+    color: rgb(224, 219, 219);
+    border: 0.5px solid black;
+}
+
+
+
+
 
 .mentions {
     float: right;
@@ -90,10 +95,11 @@ body {
 .qui-suisje {
     text-align: center;
     font-size: 20px;
+    color: rgba(255, 255, 255, 0.774);
 }
 
 #second-titre {
-    color: #333;
+    color: rgba(255, 255, 255, 0.774);
     overflow: hidden;
     border-right: .15em solid #333;
     white-space: nowrap;
@@ -160,5 +166,10 @@ body {
     }
     #second-titre2 {
         display: block;
+    }
+    #second li a,
+    #premier li a {
+        height: 50px;
+        font-size: 30px;
     }
 }

@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 body {
-    background: rgb(255, 255, 255);
-    background: radial-gradient(circle, rgba(255, 255, 255, 1) 7%, rgba(215, 215, 233, 1) 45%);
+    /*background: rgb(255, 255, 255);
+    background: radial-gradient(circle, rgba(255, 255, 255, 1) 7%, rgba(215, 215, 233, 1) 45%);*/
+    background-image: url('img/background-black2.jpg');
+    background-size: cover;
     font-family: "Poppins", sans-serif;
 }
 
@@ -9,6 +11,9 @@ body {
     display: flex;
     flex-wrap: wrap;
 }
+
+
+/*Toutes mes conteneurs*/
 
 #processing,
 #java,
@@ -27,44 +32,24 @@ body {
     width: 20%;
     height: 200px;
     border-radius: 3em;
+    border: 5px solid black;
 }
 
 
 /*Les tailles quand on passe au dessus de mes conteneurs*/
 
-#processing:hover {
-    transition: 0.5s;
-    height: 280px;
-}
-
-#java:hover {
-    transition: 0.5s;
-    height: 360px;
-}
-
-#html-css:hover {
-    transition: 0.5s;
-    height: 250px;
-}
-
-#bash:hover {
-    transition: 0.5s;
-    height: 290px;
-}
-
-#systeme:hover {
-    transition: 0.5s;
-    height: 260px;
-}
-
-#bd:hover {
-    transition: 0.5s;
-    height: 250px;
-}
-
+#processing:hover,
+#java:hover,
+#html-css:hover,
+#bash:hover,
+#systeme:hover,
+#bd:hover,
 #gestion:hover {
     transition: 0.5s;
-    height: 275px;
+    /*background-color: cadetblue;*/
+    background-image: url("img/background-led2.jpg");
+    background-size: cover;
+    box-shadow: 10px 5px 400px rgb(153, 152, 152);
 }
 
 #processing:hover>.projets-processing,
@@ -77,6 +62,23 @@ body {
     display: block;
 }
 
+#processing:hover>h3,
+#processing:hover>p,
+#java:hover>h3,
+#java:hover>p,
+#html-css:hover>h3,
+#html-css:hover>p,
+#bash:hover>h3,
+#bash:hover>p,
+#systeme:hover>h3,
+#systeme:hover>p,
+#bd:hover>h3,
+#bd:hover>p,
+#gestion:hover>h3,
+#gestion:hover>p {
+    display: none;
+}
+
 .projets-processing,
 .projets-java,
 .projets-html-css,
@@ -85,6 +87,21 @@ body {
 .projets-bd,
 .projets-gestion {
     display: none;
+}
+
+.projets-processing,
+.projets-gestion,
+.projets-html-css,
+.projets-bd {
+    margin-top: 15%;
+}
+
+.projets-java {
+    margin-top: 6%;
+}
+
+.projets-systeme {
+    margin-top: 20%;
 }
 
 #processing img,
@@ -190,7 +207,7 @@ body {
         width: 100%;
     }
     #conteneur {
-        display: block;
+        display: flex;
     }
     #processing,
     #java,
@@ -200,7 +217,7 @@ body {
         padding-right: 25%;
         margin-left: auto;
         margin-right: auto;
-        height: 600px;
+        height: 200px;
     }
     #processing:hover,
     #java:hover,
