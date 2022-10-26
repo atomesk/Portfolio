@@ -5,41 +5,50 @@
     <meta charset="UTF-8">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/header.css" rel="stylesheet">
+    <link href="css/projets.css" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>Portfolio Arno Tomé</title>
 </head>
 
 <body>
 
     <header>
-        <ul>
-            <li style="float: left; color: white; margin-left: 15px;">
-                <p><strong>Arno Tomé</strong> / Étudiant 1ère année BUT Informatique / À propos de moi </p>
-            </li>
-            <li><a href="pdf-projets/CV.pdf" target="_blank">CV</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="index.html">À propos de moi</a></li>
-        </ul>
+        <div class="wrapper">
+            <ul>
+                <li style="float: left; color: white; margin-left: 15px;">
+                    <p><strong>Arno Tomé</strong> / Étudiant 2nd année BUT Informatique </p>
+                </li>
+                <li><a title="CV" href="pdf-projets/CV.pdf" target="_blank"><span class="material-symbols-outlined">
+                            contact_page
+                        </span></a></li>
+                <li><a title="Projets" href="#part-projets"><span class="material-symbols-outlined">
+                            developer_board
+                        </span></a></li>
+                <li><a title="Compétences" href="#part-competences"><span class="material-symbols-outlined">
+                            manage_accounts
+                        </span></a></li>
+                <li><a title="Acceuil" href="index.html"><span class="material-symbols-outlined">
+                            person_filled
+                        </span></a></li>
+                <li><a href="test.html">TEST</a></li>
+            </ul>
+        </div>
     </header>
 
     <nav>
-        <div class="navbar">
-            <div class="container nav-container">
-                <input class="checkbox" type="checkbox" name="" id="" />
-                <div class="hamburger-lines">
-                    <span class="line line1"></span>
-                    <span class="line line2"></span>
-                    <span class="line line3"></span>
-                </div>
-                <div class="logo">
-                    <h1> À propos de moi</h1>
-                </div>
-                <div class="menu-items">
-                    <ul>
-                        <li><a href="index.html">À propos de moi</a></li>
-                        <li><a href="portfolio.html">Portfolio</a></li>
-                        <li><a href="pdf-projets/CV.pdf" target="_blank">CV</a></li>
-                    </ul>
-                </div>
+        <div id="menu">
+            <input type="checkbox" id="burger">
+            <div id="menu_links">
+                <div id="menu_link"><a href="pdf-projets/CV.pdf" target="_blank">CV</a></div>
+                <div id="menu_link"><a href="projets.html">Mes projets</a></div>
+                <div id="menu_link"><a href="index.html">À propos de moi</a></div>
             </div>
         </div>
     </nav>
@@ -51,42 +60,199 @@
             <div id="trait"></div>
             <br>
             <ul>
-                <li><a href="https://www.linkedin.com/in/arno-tom%C3%A9-609906236/" target="_blank">Linkedin</a></li>
-            </ul>
-            <br>
-            <ul>
-                <li><a href="mailto:arnotome11@gmail.com">Mail</a></li>
+                <li><a href="https://www.linkedin.com/in/arno-tom%C3%A9-609906236/" target="_blank">Linkedin</a>
+                </li>
+                <br>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </section>
         <section id="second">
-            <section id="second-titre">
-                <p><span class="gros">Hello</span>, qui je suis et ce que je fais !</p>
-            </section>
-            <section id="second-titre2">
-                <p><span class="gros">Hello</span>, qui je suis et ce que je fais !</p>
-            </section>
-            <br>
-            <br>
+            <div id="second-titre">
+                <p><span class="gros">Hello</span>, futur développeur web freelance !</p>
+            </div>
+            <div id="second-titre2">
+                <p><span class="gros">Hello</span>, futur développeur web freelance !</p>
+            </div>
             <ul>
                 <li><a href="pdf-projets/CV.pdf" target="_blank">CV</a></li>
+                <br>
+                <li><a href="#part-projets">Mes projets</a></li>
             </ul>
             <br>
-            <ul>
-                <li><a href="portfolio.html">Portfolio</a></li>
-            </ul>
-            <br>
-            <br>
-            <p class="qui-suisje"> Je m'appelle Arno, j'ai 18 ans et je suis étudiant en première année de BUT Informatique sur Bordeaux. Ouvert d'esprit, attiré par le contact humain. J'aime la cohésion, l'entraide et l'esprit de groupe. Je pratique du sport régulièrement.
+            <p class="qui-suisje"> Je m'appelle Arno, j'ai 18 ans et je suis étudiant en seconde année de BUT
+                Informatique à l'université de Bordeaux. Ouvert d'esprit, attiré par le contact humain. J'aime la
+                cohésion, l'entraide
+                et l'esprit de groupe. Je pratique du sport régulièrement.
                 Passionné par l'informatique et précisément le développement web, je souhaite en faire mon métier.
             </p>
+        </section>
+    </div>
+
+    <div class="competences">
+        <h1 id="part-competences">Mes compétences</h1>
+        <div class="wrapper">
+            <div class="competences-part1">
+                <div class="competences-dev-sites">
+                    <section id="comp-dev-sites">
+                        <h2>Développement de site internet</h2>
+                        <div id="comp-html">
+                            <h4>HTML & CSS</h4>
+                            <div class="progressbar-wrapper">
+                                <div title="html" class="progressbar html"></div>
+                            </div>
+                        </div>
+                        <div id="comp-php">
+                            <h4>PHP</h4>
+                            <div class="progressbar-wrapper">
+                                <div title="php" class="progressbar php"></div>
+                            </div>
+                        </div>
+                        <div id="comp-js">
+                            <h4>JavaScript</h4>
+                            <div class="progressbar-wrapper">
+                                <div title="js" class="progressbar js"></div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="competences-dev-objet">
+                    <section id="comp-dev-objet">
+                        <h2>Développement orienté objet et applications</h2>
+                        <div id="comp-java">
+                            <h4>JAVA</h4>
+                            <div class="progressbar-wrapper">
+                                <div title="java" class="progressbar java"></div>
+                            </div>
+                        </div>
+                        <div id="comp-python">
+                            <h4>PYTHON</h4>
+                            <div class="progressbar-wrapper">
+                                <div title="python" class="progressbar python"></div>
+                            </div>
+                        </div>
+                        <div id="comp-csharp">
+                            <h4>C#</h4>
+                            <div class="progressbar-wrapper">
+                                <div title="csharp" class="progressbar csharp"></div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <div class="competences-part2">
+                <div class="competences-bd">
+                    <section id="comp-bd">
+                        <h2>Gestion d'une base de données</h2>
+                        <div id="comp-sql">
+                            <h4>SQL</h4>
+                            <div class="progressbar-wrapper">
+                                <div title="sql" class="progressbar sql"></div>
+                            </div>
+                        </div>
+                        <div id="comp-phpmyadmin">
+                            <h4>phpMyAdmin</h4>
+                            <div class="progressbar-wrapper">
+                                <div title="phpmyadmin" class="progressbar phpmyadmin"></div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="competences-montage">
+                    <section id="comp-montage">
+                        <h2>Montage photos/vidéos</h2>
+                        <div id="comp-canva">
+                            <h4>CANVA</h4>
+                            <div class="progressbar-wrapper">
+                                <div title="canva" class="progressbar canva"></div>
+                            </div>
+                        </div>
+                        <div id="comp-sony">
+                            <h4>SONY VEGAS PRO</h4>
+                            <div class="progressbar-wrapper">
+                                <div title="sony" class="progressbar sony"></div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="conteneur">
+        <h1 id="part-projets">Mes projets</h1>
+        <section id="processing">
+            <h3>Processing</h3>
+            <div class="trait"></div>
+            <div class="projets-processing">
+                <!--<img src="img/pong.png">-->
+                <img class="noiretblanc" src="img/pong_noir_et_blanc.png">
+                <a href="pdf-projets/projet-pong.pdf" target="_blank"><button class="custom-btn btn-15 projet1">Projet :
+                        Pong</button></a>
+            </div>
+        </section>
+        <section id="java">
+            <h3>Java</h3>
+            <div class="trait"></div>
+            <div class="projets-java">
+                <a href="pdf-projets/projet-lowatem1.pdf" target="_blank"><button
+                        class="custom-btn btn-15 projet1">Projet : Lowatem Phase 1</button></a>
+                <a href="pdf-projets/projet-lowatemia.pdf" target="_blank"><button
+                        class="custom-btn btn-15 projet1">Projet : Lowatem Phase IA</button></a>
+            </div>
+        </section>
+        <section id="html-css">
+            <h3>Html5 & Css3</h3>
+            <div class="trait"></div>
+            <div class="projets-html-css">
+                <a href="pdf-projets/projet-web.pdf" target="_blank"><button class="custom-btn btn-15 projet1">Projet :
+                        Your Barber</button></a>
+                <br>
+                <br>
+                <a href="yourbarber/YourBarber.html" target="_blank"><button class="button-site">Lien vers le
+                        site</button></a>
+            </div>
+        </section>
+        <!-- <section id="bash">
+            <h3>Bash</h3>
+            <p>
+                <img src="img/logo-bash.png">
+            </p>
+            <div class="projets-bash">
+                <button class="custom-btn btn-15 projet1">Projet : Convertisseur</button>
+            </div>
+        </section>-->
+        <section id="systeme">
+            <h3>Système Réseaux</h3>
+            <div class="trait"></div>
+            <div class="projets-systeme">
+                <a href="pdf-projets/projet-machine.pdf" target="_blank"><button
+                        class="custom-btn btn-15 projet1">Projet : Installation Machine</button></a>
+            </div>
+        </section>
+        <section id="bd">
+            <h3>Base de données</h3>
+            <div class="trait"></div>
+            <div class="projets-bd">
+                <a href="pdf-projets/projet-bd.pdf" target="_blank"><button class="custom-btn btn-15 projet1">Projet
+                        :
+                        Application Vigneron</button></a>
+            </div>
+        </section>
+        <section id="gestion">
+            <h3>Gestion Projet Organisation</h3>
+            <div class="trait"></div>
+            <div class="projets-gestion">
+                <a href="pdf-projets/projet-gestion.pdf" target="_blank"><button
+                        class="custom-btn btn-15 projet1">Projet : Entreprise Your Barber</button></a>
+            </div>
         </section>
     </div>
 
     <div class="mentions">
         <p>© 2022 Copyright & Devlopped by @Arno</p>
     </div>
-
-
 </body>
 
 </html>

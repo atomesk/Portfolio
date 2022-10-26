@@ -1,0 +1,161 @@
+header {
+    background-color: grey;
+    height: 100px;
+    display: flex;
+    border: 2px solid;
+    margin: 10px;
+}
+
+body {
+    background-image: url("img/fond.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: sans-serif;
+    margin: 0;
+}
+
+#pestel {
+    width: 20%;
+    text-align: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: block;
+    margin: auto;
+    background-color: white;
+    border: 2px solid;
+}
+
+.reseaux img{
+    width: 50px;
+    height: 50px;
+}
+
+h1 {
+    display: block;
+    color: white;
+    margin: auto;
+}
+
+header a {
+    text-decoration: none;
+}
+
+header img{
+    margin: 10px;
+    width: 65%;
+}
+
+
+footer {
+    background-color: grey;
+    height: 125px;
+    border: 2px solid;
+    margin: 10px;
+
+}
+
+
+#MentionsLink {
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    background-color: white;
+    height: 80px;
+    width: 40%;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    color: black;
+    box-shadow: 7px 5px 5px black;
+    border: 2px solid;
+}
+
+nav {
+    flex: 1;
+    margin: 0 auto;
+    background-color: grey;
+    position: sticky;
+    top: 0px;
+    opacity: 75%;
+    margin: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+
+nav ul::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    border-bottom: 2px solid transparent;
+    padding: 10px 0px;
+    transition: 0.5s;
+}
+
+nav a:hover {
+    color: black;
+}
+
+.sous {
+    display: none;
+    background-color: grey;
+}
+
+nav>ul li:hover .sous {
+    display: block;
+}
+
+.sous li {
+    float: none;
+    width: 100%;
+    text-align: left;
+}
+
+.sous a {
+    padding: 10px;
+    border-bottom: none;
+}
+
+.sous a:hover {
+    border-bottom: none;
+    background-color: rgba(200, 200, 200, 0.1);
+}
+
+.deroulant>a::after {
+    content: " ▼";
+    font-size: 12px;
+}
+
+footer img {
+    width: 30px;
+    height: 30px;
+}
+  
+@media (max-width: 500px) {
+    h1{
+        text-align: center;
+    }
+    
+    #pestel {
+        width: 50%;
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+
+    #MentionsLink {
+        width: 90%;
+    }
+    }

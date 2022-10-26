@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Contacter Your Barber </title>
+    <link href="contact.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width" />
+</head>
+
+<body>
+    <header>
+        <a href="YourBarber.html"><img id="imgLogo" src="img/Logo.png" alt="Logo" /></a>
+        <h1>Contacter Your Barber</h1>
+    </header>
+    <nav>
+        <ul>
+            <li class="deroulant"><a href="#">Mon compte</a>
+                <ul class="sous">
+                    <li><a href="#">S'inscire</a></li>
+                    <li><a href="#">Se connecter</a></li>
+                    <li><a href="#">Prendre un RDV</a></li>
+                </ul>
+            </li>
+            <li class="deroulant"><a href="#">Nos produits</a>
+                <ul class="sous">
+                    <li><a href="#">Gel homme</a></li>
+                    <li><a href="#">Shampoings</a></li>
+                    <li><a href="#">Cire homme</a></li>
+
+                </ul>
+            </li>
+            <li><a href="mailto:yourbarber@gmail.com" target="_blank">Contact</a></li>
+            <li><a href="MentionsLegales.html">Mentions légales</a></li>
+        </ul>
+    </nav>
+
+    <section id="formulaire">
+        <h2>NOUS CONTACTER :</h2>
+        <h4>NOS RESEAUX SOCIAUX :</h4>
+        <p class="reseaux">
+            <a href="https://www.snapchat.com/" target="_blank"><img src="img/snapchat.png"
+                    alt="Notre compte snapchat" /></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="img/instagram.png"
+                    alt="Notre compte instagram" /></a>
+            <a href="https://twitter.com/" target="_blank"><img src="img/twitter.png" alt="Notre compte twitter" /></a>
+        </p>
+        <h4>NOTRE MAIL :</h4>
+        <p class="reseaux">
+            <a href="mailto:yourbarber@gmail.com" target="_blank"><img src="img/mail.png" alt="Notre mail" /></a>
+        </p>
+        <h4>EN CAS DE PROBLEMES CONTACTEZ NOUS :</h4>
+        
+        <form method="post">
+            <p>Êtes vous client chez nous ?</p>
+            <div class="oui-check">
+                <label for="oui">Oui</label>
+                <input type="checkbox" name="oui" id="oui">
+            </div>
+            <div class="non-check">
+                <label for="non">Non</label>
+                <input type="checkbox" name="non" id="non">
+            </div>
+            <div>
+                <label for="name">Votre NOM :</label>
+                <input type="text" id="name" name="user_name">
+            </div>
+            <div>
+                <label for="prenom">Votre Prénom :</label>
+                <input type="text" id="prenom" name="user_name">
+            </div>
+            <div>
+                <label for="mail">Votre e-mail :</label>
+                <input type="email" id="mail" name="user_mail">
+            </div>
+            <div>
+                <label for="msg">Votre problème :</label>
+                <textarea id="msg" name="user_message"></textarea>
+            </div>
+            <div class="button">
+                <button type="submit">Envoyer le problème</button>
+            </div>
+        </form>
+    </section>
+
+    <footer>
+        <p id="MentionsLink">
+            ©2022 YourBarber, Inc. Tous droits réservés<br /> Paiement : CB | VISA | MasterCard | Paypal<br />
+            <a href="MentionsLegales.html">Mentions légales</a><br />
+            <a href="https://www.snapchat.com/" target="_blank"><img src="img/snapchat.png"
+                    alt="Notre compte snapchat" /></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="img/instagram.png"
+                    alt="Notre compte snapchat" /></a>
+            <a href="https://twitter.com/" target="_blank"><img src="img/twitter.png" alt="Notre compte snapchat" /></a>
+        </p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,98 @@
+body {
+    background-image: url('img/background-black2.jpg');
+}
+
+.formulaire {
+    background-color: #333;
+    margin-top: 15vh;
+    margin-left: 50vh;
+    margin-right: 50vh;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    border-radius: 50px;
+    text-align: center;
+    color: rgba(215, 215, 233, 1);
+
+}
+
+.formulaire>h1 {
+    font-weight: 500;
+}
+
+.formulaire>p {
+    font-weight: 300;
+}
+
+form div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 83px;
+    margin-top: 25px;
+}
+
+form div>label {
+    margin-bottom: 7px;
+    font-weight: 600;
+}
+
+form div>input,
+form div>select,
+form div>textarea {
+    background: rgba(215, 215, 233, 1);
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
+}
+
+form div>input,
+form div>select {
+    height: 50px;
+    padding-left: 10px;
+}
+
+form div>select {
+    appearance: none;
+}
+
+form div>textarea {
+    height: 195px;
+    padding: 15px 0px 0px 10px;
+}
+
+form div>input::placeholder,
+form div>textarea::placeholder {
+    color: #333;
+}
+
+form div>select option {
+    background: white;
+    color: #303030;
+}
+
+form div:last-child {
+    align-items: center;
+    margin-top: 20px;
+}
+
+#nom, #email, #sujet, #message{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Poppins", sans-serif; 
+}
+
+form button {
+    width: 30%;
+    height: 5vh;  
+    border-radius: 30px;
+    background-color: rgba(215, 215, 233, 1);
+    cursor: pointer;
+}
+
+form button:hover{
+    background: none;
+    color: rgb(224, 219, 219);
+}

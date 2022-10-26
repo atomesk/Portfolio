@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+    /*background: rgb(255, 255, 255);
+    background: radial-gradient(circle, rgba(255, 255, 255, 1) 7%, rgba(215, 215, 233, 1) 45%);*/
+    background-image: url('img/background-black2.jpg');
+    background-size: cover;
+
+    font-family: "Poppins", sans-serif;
+}
+h1{
+    color: rgba(255, 255, 255, 0.774);
+    text-align: center;
+    text-decoration: underline;
+}
+
+#conteneur {
+    display: flex;
+    flex-direction: column;
+}
+
+h3 {
+    color: white;
+    text-align: center;
+}
+
+.trait {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: 1px solid rgba(255, 255, 255, 1);
+    width: 600px;
+}
+
+#processing,
+#java,
+#gestion,
+#html-css,
+#systeme,
+#bd {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.custom-btn {
+    margin-top: 25px;
+    width: 200px;
+    height: 40px;
+    padding: 10px 25px;
+    border: 2px solid #333;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    border: 2px solid white;
+}
+
+#java .custom-btn,
+#systeme .custom-btn,
+#bd .custom-btn {
+    width: 225px;
+}
+
+#gestion .custom-btn {
+    width: 250px;
+}
+
+.btn-15 {
+    background: #333;
+    color: #fff;
+    z-index: 1;
+}
+
+.btn-15:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    background: #e0e5ec;
+    transition: all 0.3s ease;
+}
+
+.btn-15:hover {
+    color: #333;
+}
+
+.btn-15:hover:after {
+    left: 0;
+    width: 100%;
+}
+
+.btn-15:active {
+    top: 2px;
+}
+
+.button-site {
+    cursor: pointer;
+    font-size: 10px;
+    border-radius: 500px;
+    border: 1px solid transparent;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    padding: 16px 14px 18px;
+    color: white;
+    box-shadow: inset 0 0 0 2px white;
+    background-color: transparent;
+    height: 48px;
+}
+
+.mentions {
+    float: right;
+    margin-top: 3%;
+    color: rgba(255, 255, 255, 0.774);
+}
+
+@media (max-width: 500px) {
+
+    #processing img,
+    #java img,
+    #html-css img,
+    #bash img {
+        width: 100%;
+    }
+
+    #conteneur {
+        display: flex;
+    }
+
+    #processing,
+    #java,
+    #html-css,
+    #bash {
+        padding-left: 25%;
+        padding-right: 25%;
+        margin-left: auto;
+        margin-right: auto;
+        height: 200px;
+    }
+
+    #processing:hover,
+    #java:hover,
+    #html-css:hover,
+    #bash:hover {
+        transition: none;
+        height: 600px;
+    }
+
+    .projets-processing,
+    .projets-java,
+    .projets-html-css,
+    .projets-bash {
+        display: block;
+    }
+}
+
+.projets-processing img{
+    width: 40%;
+    margin-top: 1rem;
+}
+
+.projets-processing .noiretblanc{
+    display: none;
+}
