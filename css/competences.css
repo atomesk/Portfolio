@@ -1,0 +1,114 @@
+.competences {
+    padding-top: 3%;
+    background-color: white;
+}
+
+.progressbar-wrapper {
+    background-color: #dfe6e9;
+    color: white;
+    border-radius: 15px;
+    width: 100%;
+}
+
+.progressbar {
+    background-color: grey;
+    color: white;
+    padding: 0.5rem;
+    text-align: right;
+    font-size: 20px;
+    border-radius: 15px;
+}
+
+.progressbar[title="html"],
+.progressbar[title="java"],
+.progressbar[title="python"],
+.progressbar[title="canva"],
+.progressbar[title="sony"],
+.progressbar[title="php"],
+.progressbar[title="csharp"],
+.progressbar[title="sql"],
+.progressbar[title="phpmyadmin"],
+.progressbar[title="js"] {
+    background-color: red;
+}
+
+.html {
+    width: 85%;
+}
+
+.php {
+    width: 45%;
+}
+
+.js {
+    width: 15%;
+}
+
+.java {
+    width: 80%;
+}
+
+.python {
+    width: 45%;
+}
+
+.sql {
+    width: 85%;
+}
+
+.phpmyadmin {
+    width: 25%;
+}
+
+.csharp {
+    width: 40%;
+}
+
+.canva {
+    width: 90%;
+}
+
+.sony {
+    width: 20%;
+}
+
+.competences h1 {
+    color: #333;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.competences h2 {
+    text-decoration: underline;
+}
+
+.competences-part1,
+.competences-part2 {
+    display: flex;
+    margin-left: 20vh;
+}
+
+.competences-dev-sites,
+.competences-dev-objet,
+.competences-bd,
+.competences-montage {
+    width: 45%;
+}
+
+#comp-dev-sites,
+#comp-dev-objet,
+#comp-bd,
+#comp-montage {
+    margin: 30px;
+    padding: 20px;
+    background-color: #333;
+    color: rgba(255, 255, 255, 0.774);
+    border-radius: 25px;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+    .competences-part1,
+    .competences-part2 {
+    margin-left: 5vh;
+}
+}

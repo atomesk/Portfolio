@@ -103,10 +103,14 @@ body {
 }
 
 
-.mentions {
-    float: right;
+footer{
     margin-top: 3%;
-    color: rgba(255, 255, 255, 0.774);
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    color: black;
+    background-color: white;
+    text-align: center;
+    font-size: 20px;
 }
 
 .qui-suisje {
@@ -125,117 +129,11 @@ body {
     animation: typing 2s steps(40, end), blink-caret .75s step-end infinite;
 }
 
-.competences {
-    padding-top: 3%;
-    background-color: white;
-}
-
-.progressbar-wrapper {
-    background-color: #dfe6e9;
-    color: white;
-    border-radius: 15px;
-    width: 100%;
-}
-
-.progressbar {
-    background-color: grey;
-    color: white;
-    padding: 1rem;
-    text-align: right;
-    font-size: 20px;
-    border-radius: 15px;
-}
-
-.progressbar[title="html"],
-.progressbar[title="java"],
-.progressbar[title="python"],
-.progressbar[title="canva"],
-.progressbar[title="sony"],
-.progressbar[title="php"],
-.progressbar[title="csharp"],
-.progressbar[title="sql"],
-.progressbar[title="phpmyadmin"],
-.progressbar[title="js"] {
-    background-color: red;
-}
-
-.html {
-    width: 70%;
-}
-
-.php {
-    width: 30%;
-}
-
-.js {
-    width: 15%;
-}
-
-.java {
-    width: 80%;
-}
-
-.python {
-    width: 45%;
-}
-
-.sql {
-    width: 85%;
-}
-
-.phpmyadmin {
-    width: 25%;
-}
-
-.csharp {
-    width: 40%;
-}
-
-.canva {
-    width: 90%;
-}
-
-.sony {
-    width: 20%;
-}
-
-.competences h1 {
-    color: #333;
-    text-align: center;
-    text-decoration: underline;
-}
-
-.competences h2 {
-    text-decoration: underline;
-}
-
-.competences-part1,
-.competences-part2 {
-    display: flex;
-}
-
-.competences-dev-sites,
-.competences-dev-objet,
-.competences-bd,
-.competences-montage {
-    flex: 1;
-}
-
-#comp-dev-sites,
-#comp-dev-objet,
-#comp-bd,
-#comp-montage {
-    margin: 30px;
-    padding: 20px;
-    background-color: #333;
-    color: rgba(255, 255, 255, 0.774);
-    border-radius: 25px;
-}
-
 @keyframes typing {
     from {
         width: 0
     }
+
     to {
         width: 100%
     }
@@ -273,10 +171,6 @@ body {
         width: 90%;
         min-height: 35vh;
         margin-top: 15%;
-    }
-
-    #premier img {
-        
     }
 
     #premier h2 {
